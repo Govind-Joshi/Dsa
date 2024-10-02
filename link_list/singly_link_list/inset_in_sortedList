@@ -1,0 +1,17 @@
+  public void insertinlist(int n){
+      ListNode nnode = new ListNode(n);
+      ListNode curr = head;
+      ListNode temp = null;
+      while(curr!=null && curr.data<n){
+          temp = curr;
+          curr = curr.next;
+          
+          
+      }
+   
+      nnode.next = curr;
+         temp.next = nnode;
+      
+      
+      
+  }
